@@ -33,6 +33,7 @@ ALLOWED_HOSTS = ['social-app-uae.herokuapp.com']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
+    'main.apps.MainConfig',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -77,8 +78,13 @@ WSGI_APPLICATION = 'social_app.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'daqug27m1n6hfd',
+        'USER': 'bqhwpmbhobuxbn',
+        'PASSWORD': 'becdfc9e91838b248f1446d033bd99bd640892e1aaab98e799b07b2ff13525d0',
+        'HOST': 'ec2-79-125-2-142.eu-west-1.compute.amazonaws.com',
+        'PORT': '5432',
+        'URI': 'postgres://bqhwpmbhobuxbn:becdfc9e91838b248f1446d033bd99bd640892e1aaab98e799b07b2ff13525d0@ec2-79-125-2-142.eu-west-1.compute.amazonaws.com:5432/daqug27m1n6hfd',
     }
 }
 
