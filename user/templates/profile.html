@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+{% if user.is_authenticated %}
+<p>Name: {{ user.first_name }} {{ user.last_name }}</p>
+<p>Date of birth: {{ user.dob }}</p>
+<img src="{{ user.image.url }}">
+{% else %}
+<p>Oops</p>
+{% endif %}
+{% endblock %}

@@ -9,8 +9,12 @@ def login_user(request):
         user = authenticate(request, username=username, password=password)
         if user is not None:
             login(request, user)
-            return redirect('main')
+            return redirect('profile')
         else:
             return redirect('login')
     else:
         return render(request, 'login.html')
+
+
+def profile(request):
+    return render(request, 'profile.html')
