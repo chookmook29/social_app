@@ -1,0 +1,15 @@
+
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+}
+#sticky-footer {
+	color: white;
+	flex-shrink: none;
+}
+#page-content {
+	flex: 1 0 auto;
+}
+  
