@@ -1,6 +1,13 @@
 {% extends 'base.html' %}
 {% block content %}
 <div class="container">
-	<p>{{ user }}'s Messages:</p>
+	<h4>{{ user }}'s messages:</h4>
+	<br>
+	{% for message in message_list %}
+		<p>"{{ message.text }}"</p>
+		<p><small>{{ message.date }}</small></p>
+		<p><small>{{ message.sender }}</small></p>
+		<button class="btn btn-light">Reply</button>
+	{% endfor %}
 </div>
 {% endblock %}
