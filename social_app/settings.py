@@ -23,6 +23,7 @@ INSTALLED_APPS = [
     'django.contrib.admin',
     'main.apps.MainConfig',
     'user.apps.UserConfig',
+    'user_messages',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',

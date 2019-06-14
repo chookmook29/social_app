@@ -1,10 +1,15 @@
 {% extends 'base.html' %}
 {% block content %}
+<div class="container">
 {% if user.is_authenticated %}
-<p>Name: {{ user.first_name }} {{ user.last_name }}</p>
-<p>Date of birth: {{ user.dob }}</p>
-<img src="{{ user.image.url }}">
+	
+		<p>Name: {{ user.first_name }} {{ user.last_name }}</p>
+		<p>Date of birth: {{ user.dob }}</p>
+		<img src="{{ user.image.url }}">
 {% else %}
-<p>Oops</p>
+		<p>Oops</p>	
+
+
 {% endif %}
+</div>
 {% endblock %}
